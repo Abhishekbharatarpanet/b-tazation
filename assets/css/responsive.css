@@ -1,0 +1,32 @@
+@media(max-width:1440px){
+    .taxation-about-text h2 {
+        font-size: 40px;
+        position: relative;
+        top: 105px;
+        left: 70px;
+    }
+    .Taxation-about-image img {
+        object-fit: cover;
+        height: 758px;
+    }
+    .taxation-about-text {
+        padding-left: 50px;
+        padding-right: 69px;
+    }
+    .do-it-contact-us-btn-text a {
+        color: black;
+        font-size: 35px;
+        position: relative;
+        top: -14px;
+    }
+    .services-we-offer-section .heading-div img {
+        width: 36%;
+        position: absolute;
+        top: 31px;
+        left: 0;
+        z-index: 999;
+        margin: 0 auto;
+        right: 0;
+    }
+
+}
