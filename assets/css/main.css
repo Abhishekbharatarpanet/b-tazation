@@ -46,7 +46,7 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -220,6 +220,7 @@ section {
   visibility: visible;
   opacity: 1;
 }
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -1525,6 +1526,7 @@ section.newly-relase-bg {
   position: relative;
   z-index: 99;
   font-size: 40px;
+  font-weight: 600;
 }
 .do-it-your-self-card-custom-scroll-bar-bg-image {
   background-image: linear-gradient(#523d7f, #2c3881);
@@ -1566,7 +1568,8 @@ div#mCSB_2_scrollbar_vertical {
 }
 
 .do-it-your-self-right-text h2 {
-  font-size: 63px;
+  font-size: 55px;
+  font-weight: 800;
 }
 
 .do-it-your-self-right-text p {
@@ -1914,6 +1917,8 @@ div#mCSB_2_dragger_vertical {
 }
 .clients-feedback-section .swiper.mySwiper6 .swiper-slide .client-img img {
   max-width: 200px;
+  height: 60px;
+    object-fit: contain; 
 }
 
 .our-blogs-section {
