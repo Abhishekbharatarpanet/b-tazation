@@ -1307,36 +1307,38 @@ button.owl-dot {
 
 .product-detials-card-image-main-container {
   padding: 50px;
-  background: #f0f0f0;
-  /* box-shadow: 5px 10px 60px #0000001c; */
+  background: rgb(244 244 244);
   border-radius: 50px;
+  position: relative;
+  z-index: 9;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #000;
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   box-shadow: 5px 10px 60px #0000001c;
   width: 300px;
   text-align: left;
   padding: 19px;
   border-radius: 10px 0px 0px 10px;
+  z-index: 8;
 }
-/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-  background-image: url(assets/images/bg_active.png);
-} */
+
 .nav-pills .nav-link{
   position: relative;
+  height: 92px;
 }
 .nav-link.active::after{
   content: '';
   position: absolute;
-  width: 200px;
-  height: 93px;
+  width: 209px;
+  height: 233px;
   background-color: red;
-  background: url(/assets/images/bg_active.png);
+  background: url(/assets/images/backgorund-Active.png);
   background-size: contain;
-  border: 1px solid red;
-  right: -267px;
-  top: 0;
+  z-index: -1;
+  right: -62px;
+  top: -71px;
+  background-repeat: no-repeat;
 }
 
 .Private-limited-company-card {
