@@ -12,11 +12,12 @@
   <!-- Favicons -->
   <link href="" rel="icon">
   <link href="" rel="apple-touch-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,6 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"/>
 
+  
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -69,7 +71,7 @@
     </div>
 </section>
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
+  <header id="header" class="header d-flex align-items-center" >
     <div class="container-fluid container-xxl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -108,7 +110,7 @@
 
 
 
-  <section class="banner-background">
+  <section class="banner-background" >
     <div class="banner-outer-div">
         <div class="content-div">
             <p class="banner-heading">
@@ -122,7 +124,8 @@
               
                 <form>
                     <div class="input-div">
-                        <input type="search" placeholder="Search" />
+                      <i class="fa fa-magnifying-glass absolute_class"></i>
+                        <input type="search" placeholder="Type here" />
                     </div>
                     <div class="button-div">
                         <button>
@@ -140,12 +143,12 @@
         </div>
     </div>
 
-    <div class="features-div">
-        <div class="outer-div">
+    <div class="features-div" data-aos="fade-left">
+        <div class="outer-div" >
             <div class="img-div"><img src="./assets/images/yearsofExperience.png" /></div>
             <div class="content">
                 <p class="number">
-                    20+
+                    <span class="countNumber_dom">20</span>+
                 </p>
                 <p class="text">
                     years of experience
@@ -156,7 +159,7 @@
             <div class="img-div"><img src="./assets/images/successReports.png" /></div>
             <div class="content">
                 <p class="number">
-                    1000+
+                   <span class="countNumber_dom">1000</span>+
                 </p>
                 <p class="text">
                     Success Reports
@@ -167,7 +170,7 @@
             <div class="img-div"><img src="./assets/images/trademark.png" /></div>
             <div class="content">
                 <p class="number">
-                    500+
+                   <span class="countNumber_dom">500</span>+
                 </p>
                 <p class="text">
                     Trademark
@@ -178,7 +181,7 @@
             <div class="img-div"><img src="./assets/images/success.png" /></div>
             <div class="content">
                 <p class="number">
-                    10K
+                   <span class="countNumber_dom">10</span>K
                 </p>
                 <p class="text">
                     Company Registration
@@ -202,9 +205,9 @@
             Registered eRI of Income-tax Department and award winning platform<br />
             that assures maximum refund
         </p>
-        <img src="./assets/images/Services We Offer.png" />
+        <img src="./assets/images/Services We Offer Bold.png" />
     </div>
-
+<img src="assets/images/bg_active.png" alt="">
     <div class="tabs-section-services">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -253,7 +256,7 @@
                                 </div>
                             </div>
                         </div>
-
+<div class="relate">
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -310,13 +313,15 @@
 
                             </div>
 
-                            <div class="swiper-button-next">
-                                <img src="./assets/images/right-arrow.png" />
-                            </div>
-                            <div class="swiper-button-prev">
-                                <img src="./assets/images/left-arrow.png" />
-                            </div>
+                           
                         </div>
+                        <div class="swiper-button-next">
+                          <img src="./assets/images/right-arrow.png" />
+                      </div>
+                      <div class="swiper-button-prev">
+                          <img src="./assets/images/left-arrow.png" />
+                      </div>
+                      </div>
 
                     </div>
                     <div class="right-div">
@@ -360,9 +365,9 @@
         </div>
         <div class="col-lg-8 taxation-about-text">
 
-          <div class="taxation-about-text">
+          <div class="taxation-about-text taxation-about-text_80">
             <h2><span class="color-text">About</span> B Taxation</h2>
-            <img class="img-fluid" src="./assets/images/About B Taxation.svg" alt="">
+            <img class="img-fluid left-30px" src="./assets/images/About B Taxation.svg" alt="">
 
 
             <p>An in-depth view not only of the company registration process, but also the processes needed to be fulfilled after getting your firm registered. Click below to obtain a better understanding of setting up your dream.</p>
@@ -376,7 +381,7 @@
 
             <div class="about-slider-card item">
               <div class="about-slider-image">
-                <img class="img-fluid" src="./assets/images/icons/Group 31.png" alt="">
+                <img class="img-fluid " src="./assets/images/icons/Group 31.png" alt="">
               </div>
               <div class="about-slider-text">
                 <h3>Unique <br>
@@ -1220,7 +1225,7 @@
 
 
             <div class="item">
-              <div class="do-it-your-self-card-custom-scroll-bar do-it-your-self-card-custom-scroll-bar-bg-image">
+              <div class="do-it-your-self-card-custom-scroll-bar do-it-your-self-card-custom-scroll-bar-bg-image" >
                 <h3>Company <br> 
                   Registration</h3>
                   <p>You can register yourself with the help
@@ -2322,7 +2327,37 @@ jQuery(".our-blogs-slider").owlCarousel({
     });
 </script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  
+   AOS.init();
 
+    var counters = $(".countNumber_dom");
+  var countersQuantity = counters.length;
+  var counter = [];
+
+  for (i = 0; i < countersQuantity; i++) {
+    counter[i] = parseInt(counters[i].innerHTML);
+  }
+
+  var count = function (start, value, id) {
+    var localStart = start;
+    setInterval(function () {
+      if (localStart < value) {
+        localStart++;
+        counters[id].innerHTML = localStart;
+      }
+    }, 10);
+  };
+
+  for (j = 0; j < countersQuantity; j++) {
+    count(0, counter[j], j);
+  }
+   
+
+
+</script>
+</script>
 
 </body>
 

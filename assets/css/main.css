@@ -4,6 +4,9 @@
   --color-default: #0a0d13;
   --color-primary: #0d42ff;
   --color-secondary: #0e1d34;
+  --heading-weight:600;
+  --font-primary:"Manrope", sans-serif;
+  --rare-color:#e5e5e5;
 }
 
 /* Smooth scroll behavior */
@@ -97,6 +100,16 @@ section {
   margin-bottom: 0;
   position: relative;
   z-index: 2;
+}
+.topbar-outer-div .left-div div img{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+.right-inner-div div img{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
 
 @media (max-width: 640px) {
@@ -268,7 +281,14 @@ section {
 .header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 30px 0;
+  padding: 15px 0;
+  box-shadow: 0px 15px 10px -10px #11111114;
+  position: relative;
+}
+.calculator img{
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .header.sticked {
@@ -283,6 +303,7 @@ section {
 
 section.Taxation {
   padding-bottom: 0px;
+  padding-top: 20px;
 }
 .Taxation-about-image img {
   object-fit: cover;
@@ -331,8 +352,8 @@ section.Taxation {
     justify-content: space-between;
     padding: 10px 0 10px 30px;
     font-family: var(--font-primary);
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 600;
     color: #000000;
     white-space: nowrap;
     transition: 0.3s;
@@ -431,12 +452,12 @@ section.Taxation {
 .calculator {
   background: #E5E5E5;
   color: black;
-  padding: 12px 25px !important;
+  padding: 8px 12px !important;
   margin: 0px 24px;
   border-radius: 6px;
 }
 .contact {
-  padding: 15px 25px !important;
+  padding: 10px 12px !important;
   background: #2F57EF;
   border-radius: 6px;
   color: #fff !important;
@@ -601,7 +622,7 @@ a.contact img {
 }
 
 .section-topbar {
-  padding: 16px 170px;
+  padding: 10px;
   background-color: #192335;
   align-items: center;
   font-family: "Manrope", sans-serif;
@@ -619,7 +640,7 @@ a.contact img {
 .section-topbar .topbar-outer-div .right-div {
   display: flex;
   align-items: center;
-  gap: 140px;
+  gap: 80px;
   color: #FFA200;
   font-size: 14px;
   font-weight: 500;
@@ -675,7 +696,22 @@ a.contact img {
   align-items: center;
   gap: 6px;
 }
-
+.image-div{
+  text-align: end;
+}
+.input-div{
+  position: relative;
+}
+.absolute_class{
+  position: absolute;
+  top: 22px;
+  left: 19px;
+  font-size: 20px;
+  color: var(--rare-color);
+}
+.input-div input::placeholder{
+  color: var(--rare-color);
+}
 .banner-background {
   background-image: url("../images/banner-bg.png");
   height: 100%;
@@ -683,8 +719,9 @@ a.contact img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px 190px 250px;
+  padding: 100px 150px 250px;
   position: relative;
+  background-position: 0px -20px;
 }
 .banner-background .banner-outer-div {
   display: flex;
@@ -697,10 +734,10 @@ a.contact img {
   width: 100%;
 }
 .banner-background .banner-outer-div .content-div .banner-heading {
-  font-family: "Manrope", sans-serif;
-  font-size: 71px;
-  font-weight: 400;
-  line-height: 90px;
+  font-family: var(--font-primary);
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 70px;
 }
 .banner-background .banner-outer-div .content-div .banner-text {
   font-family: "Manrope", sans-serif;
@@ -709,8 +746,9 @@ a.contact img {
 }
 .banner-background .banner-outer-div .content-div .rating-text {
   margin-top: 70px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
+  font-family: "Manrope", sans-serif;
 }
 .banner-background .banner-outer-div .content-div form {
   display: flex;
@@ -724,11 +762,12 @@ a.contact img {
   width: 100%;
 }
 .banner-background .banner-outer-div .content-div form .input-div input {
-  padding: 26px;
+  padding: 20px;
   border-radius: 8px;
   outline: none;
   border: none;
   width: 100%;
+  padding-left: 60px;
 }
 .banner-background .banner-outer-div .content-div form .button-div {
   max-width: 170px;
@@ -739,7 +778,7 @@ a.contact img {
   color: white;
   font-size: 18px;
   font-weight: 600;
-  padding: 24px;
+  padding: 19px;
   border: none;
   border-radius: 8px;
   max-width: 170px;
@@ -773,12 +812,12 @@ a.contact img {
   background-color: white;
   width: 82%;
   position: absolute;
-  bottom: -60px;
+  bottom: 12px;
   left: 0;
   right: 0;
   margin: 0 auto;
   border-radius: 20px;
-  padding: 70px 50px;
+  padding: 30px 50px;
   z-index: 3;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1215686275);
 }
@@ -798,13 +837,13 @@ a.contact img {
 }
 
 .services-we-offer-section {
-  margin-top: 150px;
-  padding: 100px 190px;
+
+  padding: 16px 150px;
 }
 .services-we-offer-section .heading-div {
   text-align: center;
   position: relative;
-  padding: 40px 0;
+  padding: 20px 0 40px 0;
 }
 .services-we-offer-section .heading-div .first-heading {
   font-size: 40px;
@@ -819,7 +858,7 @@ a.contact img {
   font-weight: 500;
 }
 .services-we-offer-section .heading-div img {
-  width: 36%;
+  width: 50%;
   position: absolute;
   top: 0px;
   left: 0;
@@ -827,9 +866,15 @@ a.contact img {
   margin: 0 auto;
   right: 0;
 }
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+  border-color: #ff000000;
+  outline: none;
+}
+
 .services-we-offer-section .tabs-section-services .nav.nav-tabs {
   justify-content: center;
-  margin-bottom: 75px;
+  margin-bottom: 40px;
+  border-bottom: none;
 }
 .services-we-offer-section .tabs-section-services .nav.nav-tabs .nav-link {
   font-size: 18px;
@@ -890,13 +935,25 @@ a.contact img {
   color: white;
   font-size: 18px;
   font-weight: 600;
-  padding: 24px;
+  padding: 10px 12px;
   border: none;
   border-radius: 8px;
 }
+.relate{
+  position: relative;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+  display: none;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: -65px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 60px;
+}
 .services-we-offer-section .services-tab-content-outer-div .left-div .swiper.mySwiper {
   max-width: 970px;
-  padding: 34px 80px;
+  padding: 34px 13px;
 }
 .services-we-offer-section .services-tab-content-outer-div .left-div .swiper.mySwiper .swiper-button-prev:after,
 .services-we-offer-section .services-tab-content-outer-div .left-div .swiper.mySwiper .swiper-rtl .swiper-button-next:after {
@@ -918,17 +975,25 @@ a.contact img {
 }
 .services-we-offer-section .services-tab-content-outer-div .left-div .swiper {
   right: 1rem;
-  width: 100%;
+  width: 90%;
   height: 100%;
+  margin-left: 0;
 }
+.mySwiper 
 .services-we-offer-section .services-tab-content-outer-div .left-div .swiper-slide {
   text-align: center;
   border-radius: 15px;
   max-width: 152px;
   width: 100%;
 }
+.services-we-offer-section .services-tab-content-outer-div .left-div .swiper-slide .slide-card{
+  text-align: center;
+}
 .services-we-offer-section .services-tab-content-outer-div .left-div .swiper-slide .slide-card {
   padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 .services-we-offer-section .services-tab-content-outer-div .left-div .swiper-slide .slide-card p {
   font-size: 18px;
@@ -944,13 +1009,20 @@ a.contact img {
 }
 .services-we-offer-section .services-tab-content-outer-div .left-div .swiper-slide-active {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1215686275);
+  border-radius: 10px;
 }
 .services-we-offer-section .services-tab-content-outer-div .right-div {
   max-width: 420px;
   width: 100%;
-  padding: 42px;
+  padding: 30px 20px 20px 20px;
   box-shadow: 1px 1px 20px 20px rgba(116, 116, 116, 0.1490196078);
   border-radius: 10px;
+}
+.services-tab-content-outer-div .left-div{
+  width: 70%;
+}
+.services-tab-content-outer-div .right-div{
+  width: 70%;
 }
 .services-we-offer-section .services-tab-content-outer-div .right-div .fees-div {
   font-size: 40px;
@@ -972,7 +1044,7 @@ a.contact img {
 .services-we-offer-section .services-tab-content-outer-div .right-div .heading {
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 .services-we-offer-section .services-tab-content-outer-div .right-div .desc {
   font-size: 16px;
@@ -980,7 +1052,7 @@ a.contact img {
   margin-bottom: 35px;
 }
 .services-we-offer-section .services-tab-content-outer-div .right-div .price {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   color: #FFA200;
 }
@@ -1002,7 +1074,10 @@ a.contact img {
 }
 .taxation-about-text {
   padding-left: 50px;
-  padding-right: 200px;
+  padding-right: 0px;
+}
+.taxation-about-text_80{
+  width: 80%;
 }
 .taxation-about-text h2 {
   font-size: 40px;
@@ -1010,11 +1085,15 @@ a.contact img {
 span.color-text {
   color: #ffa200;
 }
+.left-30px{
+  position: relative;
+  left: -40px;
+}
 .taxation-about-text h2 {
   font-size: 40px;
   position: relative;
   top: 111px;
-  left: 70px;
+  /* left: 70px; */
 }
 .about-b-taxation-section {
   display: flex;
@@ -1047,11 +1126,12 @@ span.color-text {
   background-size: cover;
 }
 
+
 .slider-about-bg-image {
   background-image: linear-gradient(#a163e8, #495aee);
 }
 .about-slider-section {
-  margin-left: -200px;
+  margin-left: -150px;
 }
 .about-slider-text h3 {
   margin-top: 28px;
@@ -1228,7 +1308,7 @@ button.owl-dot {
 .product-detials-card-image-main-container {
   padding: 50px;
   background: #f0f0f0;
-  box-shadow: 5px 10px 60px #0000001c;
+  /* box-shadow: 5px 10px 60px #0000001c; */
   border-radius: 50px;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -1240,6 +1320,25 @@ button.owl-dot {
   padding: 19px;
   border-radius: 10px 0px 0px 10px;
 }
+/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-image: url(assets/images/bg_active.png);
+} */
+.nav-pills .nav-link{
+  position: relative;
+}
+.nav-link.active::after{
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 93px;
+  background-color: red;
+  background: url(/assets/images/bg_active.png);
+  background-size: contain;
+  border: 1px solid red;
+  right: -267px;
+  top: 0;
+}
+
 .Private-limited-company-card {
   background: #fff;
   text-align: center;
@@ -1424,12 +1523,12 @@ section.newly-relase-bg {
   color: #fff;
 }
 
-
 .do-it-your-self-card-custom-scroll-bar{
   height: 500px;
   background-color: #f9f9f9;
   padding: 30px;
   border-radius: 10px;
+
 }
 div#mCSB_1_scrollbar_vertical {
   background: #fff;
