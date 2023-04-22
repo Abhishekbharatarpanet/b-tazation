@@ -1306,9 +1306,9 @@ button.owl-dot {
 
 
 .product-detials-card-image-main-container {
-  padding: 50px;
+  padding: 50px 20px;
   background: rgb(244 244 244);
-  border-radius: 50px;
+  border-radius: 25px;
   position: relative;
   z-index: 9;
 }
@@ -1327,17 +1327,17 @@ button.owl-dot {
   position: relative;
   height: 92px;
 }
-.nav-link.active::after{
+
+.asoBTN.active::after{
   content: '';
   position: absolute;
   width: 209px;
-  height: 233px;
-  background-color: red;
+  height: 211px;
   background: url(/assets/images/backgorund-Active.png);
   background-size: contain;
   z-index: -1;
-  right: -62px;
-  top: -71px;
+  right: -75px;
+  top: -56px;
   background-repeat: no-repeat;
 }
 
@@ -1367,10 +1367,11 @@ button.owl-dot {
 }
 
 .Private-limited-company-tittle h3 {
-  font-size: 22px;
+  font-size: 20px;
   color: #2F57EF;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
 }
 .nav-pills .nav-link {
   background: 0 0;
@@ -1385,10 +1386,14 @@ button.owl-dot {
 
 
 .Private-limited-company-price h2 {
-  font-size: 48px;
+  font-size: 40px;
   color: #FFA200;
+  margin-bottom: 0;
 }
 
+.-price-buttom{
+  margin-top: 8px !important;
+}
 span.text-small {
   font-size: 23px;
   color: #053F5B;
@@ -1405,7 +1410,8 @@ p.-price-buttom {
 }
 
 .Private-limited-company-list p {
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 p.what-get {
@@ -1422,7 +1428,9 @@ p.what-get {
 
 .Private-limited-company-list-2 ul li {
   border-bottom: 1px solid #2F57EF;
-  padding: 5px 0px;
+  padding: 3px 0px;
+  font-weight: 600;
+  font-weight: 12px;
 }
 
 
