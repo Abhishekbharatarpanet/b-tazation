@@ -1334,7 +1334,7 @@ button.owl-dot {
   position: absolute;
   width: 209px;
   height: 211px;
-  background: url(/assets/images/backgorund-Active.png);
+  background: url(../images/backgorund-Active.png);
   background-size: contain;
   z-index: -1;
   right: -75px;
@@ -1604,14 +1604,20 @@ div#mCSB_2_scrollbar_vertical {
 }
 
 .our-blogs-card-heading h2 {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: bold;
-  padding: 33px;
+  padding: 15px;
+}
+.our-blogs-slider .owl-stage-outer.owl-height{
+  padding: 10px 0px;
 }
 
 .our-blogs-card-pra p {
-  padding: 0px 33px;
-  font-size: 16px;
+  padding: 0px 15px;
+  font-size: 15px;
+}
+.our-blogs-card-date-text p{
+  margin-bottom: 0;
 }
 
 .our-blogs-card-date-read-more {
@@ -1622,13 +1628,13 @@ div#mCSB_2_scrollbar_vertical {
   padding-bottom: 20px;
 }
 .our-blogs-card-date-text p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   margin-left: 10px;
 }
 
 .our-blogs-card-read-more a {
-  font-size: 15px;
+  font-size: 14px;
   display: flex;
 }
 
@@ -1647,7 +1653,12 @@ div#mCSB_2_scrollbar_vertical {
   align-items: center;
 }
 .our-news-text h5 {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.our-news-text a{
+  font-size: 13px;
 }
 
 .our-news-text {
@@ -1888,12 +1899,32 @@ div#mCSB_2_dragger_vertical {
   background-color: white;
 }
 .clients-feedback-section .swiper-slide .slide-card {
-  padding: 32px 16px;
+  padding: 0px;
+}
+#loom-companion-mv3{
+  display: none;
 }
 .clients-feedback-section .swiper-slide .slide-card .desc {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   margin-top: 20px;
+  overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 5;
+-webkit-box-orient: vertical;
+}
+.clients-feedback-section .swiper-slide .slide-card .bottom-div div{
+  font-size: 16px;
+}
+.clients-feedback-section .swiper-slide .slide-card .bottom-div div img{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+object-fit: cover;
+}
+.clients-feedback-section .swiper-slide .slide-card .bottom-div div i{
+  color: gold;
 }
 .clients-feedback-section .swiper-slide .slide-card .bottom-div {
   display: flex;
@@ -1916,8 +1947,8 @@ div#mCSB_2_dragger_vertical {
   color: white !important;
 }
 .clients-feedback-section .swiper.mySwiper6 .swiper-slide .client-img img {
-  max-width: 200px;
-  height: 60px;
+  max-width: 300px;
+  height: 90px;
     object-fit: contain; 
 }
 
