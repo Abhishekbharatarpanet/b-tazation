@@ -736,17 +736,17 @@ a.contact img {
 }
 .banner-background .banner-outer-div .content-div .banner-heading {
   font-family: var(--font-primary);
-  font-size: 70px;
-  font-weight: 600;
+  font-size: 65px;
+  font-weight: 700;
   line-height: 70px;
 }
 .banner-background .banner-outer-div .content-div .banner-text {
   font-family: "Manrope", sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
 }
 .banner-background .banner-outer-div .content-div .rating-text {
-  margin-top: 70px;
+  margin-top: 20px;
   font-size: 20px;
   font-weight: 600;
   font-family: "Manrope", sans-serif;
@@ -920,6 +920,7 @@ a.contact img {
 }
 .services-we-offer-section .services-tab-content-outer-div .left-div .left-inner-div .content-div .heading span {
   color: #FFA200;
+  font-weight: 500;
 }
 .services-we-offer-section .services-tab-content-outer-div .left-div .left-inner-div .content-div .desc {
   font-size: 16px;
@@ -987,14 +988,35 @@ a.contact img {
   max-width: 152px;
   width: 100%;
 }
-.services-we-offer-section .services-tab-content-outer-div .left-div .swiper-slide .slide-card{
-  text-align: center;
+.do-it-your-self-card-custom-scroll-bar p{
+  font-size: 13px;
+  font-weight: 600;
+}
+.do-it-list ul li{
+  font-size: 13px;
+  font-weight: 600;
+}
+.do-it-list ul li::marker{
+  color: #ffa200;
+}
+.do-it-your-self-card-custom-scroll-bar h3{
+font-weight: 700;
+}
+.do-it-list h4{
+  font-size: 16px;
+  font-weight: 700;
+}
+.do-it-text-buttom h4{
+  font-size: 18px;
+  font-weight: 700;
 }
 .services-we-offer-section .services-tab-content-outer-div .left-div .swiper-slide .slide-card {
   padding: 32px 16px;
   display: flex;
   flex-direction: column;
   gap: 9px;
+  text-align: center;
+  border-radius: 10px;
 }
 .services-we-offer-section .services-tab-content-outer-div .left-div .swiper-slide .slide-card p {
   font-size: 18px;
@@ -1043,12 +1065,12 @@ a.contact img {
   background-color: rgba(47, 87, 239, 0.2705882353);
 }
 .services-we-offer-section .services-tab-content-outer-div .right-div .heading {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 .services-we-offer-section .services-tab-content-outer-div .right-div .desc {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   margin-bottom: 35px;
 }
@@ -1058,7 +1080,7 @@ a.contact img {
   color: #FFA200;
 }
 .services-we-offer-section .services-tab-content-outer-div .right-div .plan {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -1280,8 +1302,9 @@ button.owl-dot {
 }
 
 .best-pricing-headeing.text-center img {
-  position: relative;
-  top: -104px;
+  position: absolute;
+  top: -35px;
+  left: 0;
 }
 
 .best-pricing-headeing.text-center h2 {
@@ -1290,7 +1313,10 @@ button.owl-dot {
   color: #ffff;
   font-size: 40px;
 }
-
+.best-pricing-headeing.text-center{
+  position: relative;
+  padding-bottom: 35px;
+}
 .do-it-yourself-section {
   padding: 100px 190px;
 }
@@ -1518,9 +1544,13 @@ section.newly-relase-bg {
   overflow-y: scroll;
   /* Handle on hover */
 }
-
+.do-it-yourself-heading.text-center{
+  position: relative;
+  /* padding-bottom: 35px; */
+}
 .do-it-yourself-heading.text-center img {
   margin-top: -104px;
+  width: 35%;
 }
 .do-it-yourself-heading.text-center h2 {
   position: relative;
@@ -1563,7 +1593,7 @@ div#mCSB_2_scrollbar_vertical {
   padding-top: 50px;
 }
 .do-it-contact-us-btn-text p {
-  font-size: 21px;
+  font-size: 19px;
   padding: 0px !important;
 }
 
@@ -1573,17 +1603,21 @@ div#mCSB_2_scrollbar_vertical {
 }
 
 .do-it-your-self-right-text p {
-  font-size: 16px;
+  font-size: 15px;
   padding-bottom: 50px;
   padding-top: 10px;
 }
 .do-it-contact-us-btn-text p {
   font-size: 21px;
 }
-
-.our-blogs-headeing img {
+.our-blogs-headeing{
   position: relative;
-  top: -111px;
+  margin-bottom: 30px;
+}
+.our-blogs-headeing img {
+  position: absolute;
+  top: -36px;
+  width: 50%;
 }
 
 .our-blogs-headeing h2 {
@@ -1614,7 +1648,8 @@ div#mCSB_2_scrollbar_vertical {
 
 .our-blogs-card-pra p {
   padding: 0px 15px;
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 400;
 }
 .our-blogs-card-date-text p{
   margin-bottom: 0;
@@ -1681,9 +1716,10 @@ div#mCSB_2_scrollbar_vertical {
 
 .do-it-contact-us-btn-text a {
   color: black;
-  font-size: 41px;
+  font-size: 30px;
   position: relative;
   top: -14px;
+  font-weight: 900;
 }
 .do-it-contact-us-btn-text {
   margin-left: 30px;
@@ -1840,15 +1876,26 @@ div#mCSB_2_dragger_vertical {
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 35px;
   position: relative;
 }
 .clients-feedback-section .heading span {
   color: #FFA200;
 }
+.mySwiper4 , .mySwiper5{
+  cursor:text;
+}
+.mySwiper4 .swiper-wrapper,.mySwiper5 .swiper-wrapper{
+padding: 10px 0;
+
+}
+section.do-it-yourself{
+  padding-bottom: 0;
+}
 .clients-feedback-section .heading img {
   position: absolute;
-  top: -40px;
+  top: -14px;
+  width: 36%;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -2170,6 +2217,13 @@ object-fit: cover;
 .faqs-section .faq-div hr {
   background-color: white;
 }
+
+.accordion-button::after{
+  background-image: url(../images/add.png);
+}
+.accordion-button:not(.collapsed)::after{
+  background-image: url(../images/minus.png);
+}
 .faqs-section .faq-div .accordion-button::after,
 .faqs-section .faq-div .accordion-button:not(.collapsed)::after {
   filter: brightness(100) !important;
@@ -2209,7 +2263,7 @@ img.img-fluid.payment-footer-image {
 
 .footer-section .heading {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .footer-section .footer-outer-div {
   display: flex;
@@ -2217,15 +2271,17 @@ img.img-fluid.payment-footer-image {
 }
 .footer-section .footer-outer-div p {
   font-weight: 500;
+  font-size: 14px;
 }
 .footer-section .footer-outer-div .first-div {
   max-width: 374px;
 }
 .footer-section .footer-outer-div .first-div img {
   margin-bottom: 16px;
+  width: 80%;
 }
 .footer-section .footer-outer-div .first-div p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 .footer-section .footer-outer-div .first-div .connect-with-us {
@@ -2233,7 +2289,11 @@ img.img-fluid.payment-footer-image {
 }
 .footer-section .footer-outer-div .first-div .social-icons-div {
   display: flex;
-  gap: 10px;
+  gap: 25px;
+  align-items: end;
+}
+.social-icons-div i{
+  font-size: 25px;
 }
 .footer-section .footer-outer-div .fourth-div .input-div-contact input {
   background-color: #E5E5E5;
